@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Statistics for User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Display User Form</h1>
+    <div class = "container">
+    <h2>hashTag Tweet Count</h2>
+        <table class="table table-striped">
+            <tr th:each="product : ${message}">
+                <td th:text="${message}"></td>
+            </tr>
+            <tr>
+                <th>hashtag</th>
+                <th>count</th>
+            </tr>
+            <tr th:each="product : ${hashTagTweetCount}">
+                <td th:text="${product.hashtag}"></td>
+                <td th:text="${product.count}"></td>
+            </tr>
+        </table>
+    </div>
+    <p></p>
+
+    <a href="/form">Login with another User Form</a><p></p>
+    <a href="/display">Display screen</a><p></p>
+    <a href="/statistics">Statistics screen</a>
+
+</body>
+</html>

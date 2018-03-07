@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>No Such User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>No Such User</h1>
+    <div class = "container">
+        <table class="table table-striped">
+            <tr th:each="product : ${user}">
+                <td th:text="${user.userName}"></td>
+            </tr>
+        </table>
+    </div>
+
+    <p><p><p>
+    <a href="/form">Login with another User Form</a><p></p>
+    <a href="/display">Display screen</a><p></p>
+    <a href="/statistics">Statistics screen</a>
+
+
+</body>
+</html>

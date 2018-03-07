@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Result</h1>
+    <p th:text="'UserName: ' + ${user.userName}" />
+    <p th:text="'First Hashtag: ' + ${user.firstHashtag}" />
+    <p th:text="'Second Hashtag: ' + ${user.secondHashtag}" />
+    <p th:text="'Third Hashtag: ' + ${user.thirdHashtag}" />
+    <a href="/form">Login with another User Form</a><p></p>
+    <a href="/display">Display screen</a><p></p>
+</body>
+</html>
